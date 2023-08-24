@@ -1,0 +1,23 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[module]
+[[module.mounts]]
+  source = 'dist'
+  target = 'static/docs/1.0/dist'
+[[module.mounts]]
+  source = 'site/content'
+  target = 'content'
+[[module.mounts]]
+  source = 'site/layouts'
+  target = 'layouts'
+[[module.mounts]]
+  source = 'site/data'
+  target = 'data'
+[[module.mounts]]
+  source = 'site/assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'site/static'
+  target = 'static'

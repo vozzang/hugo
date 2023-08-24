@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    {{ partial "head/metadata" . }}
+    {{ partial "head/stylesheet" . }}
+  </head>
+  <body>
+    {{ partial "header/header" . }}
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "footer/footer" . }}
+  </body>
+</html>

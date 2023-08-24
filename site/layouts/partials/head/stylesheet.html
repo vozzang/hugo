@@ -1,0 +1,9 @@
+<link href="/docs/1.0/dist/css/demo.css" rel="stylesheet">
+
+{{- $targetSiteCssPath := "assets/css/site.css" -}}
+{{- $sassOptions := dict "targetPath" $targetSiteCssPath "outputStyle" "expanded" "precision" 6 -}}
+{{- $postcssOptions := dict "use" "autoprefixer" "noMap" true -}}
+
+<!-- {{- $style := resources.Get "scss/site.scss" | toCSS $sassOptions | postCSS $postcssOptions }} -->
+{{- $style := resources.Get "scss/site.scss" | toCSS $sassOptions }}
+<link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
