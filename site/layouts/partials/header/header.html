@@ -1,11 +1,11 @@
 <header class="site-header">
   <div class="logo">
-    <a href="/">logo</a>
+    <a href="{{ relURL "" }}">logo</a>
   </div>
   <nav class="site-header-nav">
-    <a href="/docs/get-started" class="{{ if eq .Page.Layout "docs"}}active{{end}}">Docs</a>
-    <a href="/docs/components/button">Foundation</a>
-    <a href="/">Graphic</a>
-    <a href="/">Guideline</a>
+    <a href="{{ relURL "docs/get-started" }}" class="{{ if eq .Page.Layout "docs"}}active{{end}}">Docs</a>
+    <a href="{{ relURL "docs/components/button" }}">Foundation</a>
+    <a href="{{ relURL "" }}">Graphic</a>
+    <a href="{{ relURL "" }}">Guideline</a>
   </nav>
 </header>

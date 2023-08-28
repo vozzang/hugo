@@ -1,5 +1,4 @@
 baseURL = 'https://vozzang.github.io/hugo/'
-canonifyurls = true
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
