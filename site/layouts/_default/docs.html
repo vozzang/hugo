@@ -1,5 +1,14 @@
 {{ define "main" }}
-<div>
-  {{ .Content }}
+<div class="site-main-container">
+  {{ partial "sidebar/sidebar" . }}
+  <div class="site-main">
+    <h1>{{ .Title }}</h1>
+    <div class="description">
+      {{ .Description }}
+    </div>
+    <div>
+      {{ .Content }}
+    </div>
+  </div>
 </div>
 {{ end }}

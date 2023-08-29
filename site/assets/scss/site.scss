@@ -1,2 +1,14 @@
 @import 'header';
 @import 'footer';
+
+.site-main-container {
+  display: grid;
+  grid-template-areas: 'sidebar main';
+  grid-template-columns: 1fr 5fr;
+  gap: 1.5rem;
+}
+
+.site-main {
+  grid-area: main;
+  padding: 100px 80px 0;
+}

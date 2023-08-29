@@ -6,4 +6,4 @@
 
 <!-- {{- $style := resources.Get "scss/site.scss" | toCSS $sassOptions | postCSS $postcssOptions }} -->
 {{- $style := resources.Get "scss/site.scss" | toCSS $sassOptions }}
-<link href="{{ $style.Permalink | relURL }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
