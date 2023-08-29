@@ -1,10 +1,19 @@
 <nav class="site-sidebar">
+  {{- $url := split .Permalink "/" -}}
+  {{- $group_slug := index $url (sub (len $url) 3) -}}
+  {{- $page_slug := index $url (sub (len $url) 2) -}}
+  <div class="site-sidebar-title">
+    {{ $group_slug }}
+  </div>
   <ul>
-    <li>
-      <a href="{{ relURL "docs/components/button" }}">Button</a>
-    </li>
-    <li>
-      <a href="{{ relURL "docs/components/checkbox" }}">Checkbox</a>
-    </li>
+  {{- $data := index .Site.Data.sidebar $group_slug -}}
+  {{- range $item := $data.pages -}}
+  {{- $item_slug := $item.title | urlize -}}
+  {{- $is_active := eq $page_slug $item_slug -}}
+  {{- $href := printf "docs/%s/%s" $group_slug $item_slug }}
+  <li>
+    <a href="{{ $href | relURL }}" class="{{ if $is_active }}active{{ end }}"{{ if $is_active }} aria-current="page"{{ end }}>{{ $item.title }}</a>
+  </li>
+  {{- end -}}
   </ul>
 </nav>

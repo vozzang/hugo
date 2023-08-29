@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: Docs index
+group: content
+title: Typography
 description: description
 ---
 
-get started
+## docs index

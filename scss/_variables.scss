@@ -1,0 +1,10 @@
+$prefix: hli- !default;
+$palette: (
+  'white': #fff,
+  'black': #272b2f,
+  'orange500': #fa6600,
+  'gray900': #485059
+) !default;
+$theme-colors: (
+  'primary': map-get($palette, 'white')
+) !default;

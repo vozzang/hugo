@@ -1,0 +1,44 @@
+.site-sidebar {
+  position: sticky;
+  top: 88px;
+  grid-area: sidebar;
+  height: calc(100vh - 13rem);
+  padding: 20px 0;
+  overflow-y: auto;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+
+  button,
+  a {
+    display: block;
+    width: 100%;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #888;
+    text-align: left;
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    opacity: 0.8;
+
+    &:hover {
+      color: #f90;
+    }
+
+    &.active {
+      color: #087;
+      background-color: #eee;
+      opacity: 1;
+    }
+  }
+}
+
+.site-sidebar-title {
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #888;
+}

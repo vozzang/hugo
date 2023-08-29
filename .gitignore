@@ -1,7 +1,5 @@
-# Ignore docs files
-/_site/
 # Hugo files
-/resources/
+resources/
 .hugo_build.lock
 
 # Numerous always-ignore extensions
@@ -29,7 +27,6 @@
 *.sublime-workspace
 nbproject
 Thumbs.db
-/.vscode/
 
 # Folders to ignore
 /dist-sass/

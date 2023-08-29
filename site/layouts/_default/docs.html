@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div class="site-main-container">
+<div class="site-main-wrap">
   {{ partial "sidebar/sidebar" . }}
   <div class="site-main">
-    <h1>{{ .Title }}</h1>
-    <div class="description">
-      {{ .Description }}
-    </div>
-    <div>
-      {{ .Content }}
+    <div class="site-main-container">
+      <div class="site-main-content">
+        <h1 class="site-main-title">{{ .Title }}</h1>
+        <div class="site-main-description">{{ .Description }}</div>
+        <div>{{ .Content }}</div>
+      </div>
     </div>
   </div>
 </div>

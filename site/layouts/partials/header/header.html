@@ -3,9 +3,10 @@
     <a href="{{ relURL "" }}">logo</a>
   </div>
   <nav class="site-header-nav">
-    <a href="{{ relURL "docs/get-started" }}" class="{{ if eq .Page.Layout "docs"}}active{{end}}">Docs</a>
-    <a href="{{ relURL "docs/components/button" }}">Foundation</a>
-    <a href="{{ relURL "docs/components/checkbox" }}">Graphic</a>
-    <a href="{{ relURL "" }}">Guideline</a>
+    <a href="{{ relURL "docs/get-started/introduction" }}" class="{{ if eq .Params.group "get-started"}}active{{end}}">Get started</a>
+    <a href="{{ relURL "docs/layout/breakpoints" }}" class="{{ if eq .Params.group "layout"}}active{{end}}">Layout</a>
+    <a href="{{ relURL "docs/content/typography" }}" class="{{ if eq .Params.group "content"}}active{{end}}">Content</a>
+    <a href="{{ relURL "docs/components/button" }}" class="{{ if eq .Params.group "components"}}active{{end}}">Components</a>
+    <a href="{{ relURL "docs/helpers/color" }}" class="{{ if eq .Params.group "helpers"}}active{{end}}">Helpers</a>
   </nav>
 </header>

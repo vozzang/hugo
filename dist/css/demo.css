@@ -1,7 +1,89 @@
+@charset "UTF-8";
 :root {
-  --heading-color: #ffcc00;
+  --hli-color-background-0: #fff;
+  --hli-color-background-1: ${Palette.gray100};
+  --hli-color-background-dimmed: ${Palette.dimmed};
+  --hli-color-surface-primary: ${Palette.orange500};
+  --hli-color-surface-secondary: ${Palette.gray900};
+  --hli-color-surface-neutral: ${Palette.white};
+  --hli-color-surface-neutral-1: ${Palette.gray100};
+  --hli-color-surface-neutral-2: ${Palette.gray200};
+  --hli-color-surface-neutral-3: ${Palette.gray300};
+  --hli-color-text-primary: ${Palette.orange500};
+  --hli-color-text-body: ${Palette.black};
+  --hli-color-text-body-1: ${Palette.gray900};
+  --hli-color-text-body-2: ${Palette.gray800};
+  --hli-color-text-body-3: ${Palette.gray700};
+  --hli-color-text-body-0: ${Palette.white};
+  --hli-color-text-neutral-1: ${Palette.gray600};
+  --hli-color-text-neutral-2: ${Palette.gray500};
+  --hli-color-border-1: ${Palette.gray100};
+  --hli-color-border-2: ${Palette.gray200};
+  --hli-color-border-3: ${Palette.gray300};
+  --hli-color-border-4: ${Palette.black};
+  --hli-color-additional-semantic-1: ${Palette.deepBlue500};
+  --hli-color-additional-semantic-2: ${Palette.red500};
+  --hli-color-additional-semantic-3: ${Palette.deepYellow500};
+  --hli-color-additional-semantic-4: ${Palette.gray500};
+  --hli-color-additional-custom-1: ${Palette.indigoBlue400};
+  --hli-color-additional-custom-2: ${Palette.orangeEmber400};
+  --hli-color-additional-custom-3: ${Palette.deepYellow300};
+  --hli-border-radius-small: 4px;
+  --hli-border-radius-medium: 8px;
+  --hli-border-radius-large: 12px;
+  --hli-border-radius-xlarge: 16px;
+  --hli-border-radius-xxlarge: 100px;
+  --hli-box-shadow-small: 0px 5px 8px rgb(0 0 0 / 2%);
+  --hli-box-shadow-medium: 0px 1px 3px rgb(0 0 0 / 8%);
+  --hli-box-shadow-large: 0px 2px 12px rgb(0 0 0 / 6%);
+  --hli-spacing-xxxsmall: 0.25rem;
+  --hli-spacing-xxsmall: 0.5rem;
+  --hli-spacing-xsmall: 0.75rem;
+  --hli-spacing-small: 1rem;
+  --hli-spacing-medium: 1.25rem;
+  --hli-spacing-large: 1.5rem;
+  --hli-spacing-xlarge: 1.75rem;
+  --hli-spacing-xxlarge: 2rem;
+  --hli-spacing-xxxlarge: 3rem;
+  --hli-font-size-title-xsmall: 1rem;
+  --hli-font-size-title-small: 1.125rem;
+  --hli-font-size-title-medium: 1.25rem;
+  --hli-font-size-title-large: 1.375rem;
+  --hli-font-size-title-xlarge: 1.625rem;
+  --hli-font-size-text-xsmall: 0.75rem;
+  --hli-font-size-text-small: 0.875rem;
+  --hli-font-size-text-medium: 1rem;
+  --hli-font-weight-light: 300;
+  --hli-font-weight-regular: 400;
+  --hli-font-weight-bold: 700;
+  --hli-font-line-height-medium: 1.4;
+  --hli-font-line-height-large: 1.5;
+  --hli-z-index-level-1: 1;
+  --hli-z-index-level-2: 2;
+  --hli-z-index-level-3: 3;
+  --hli-z-index-level-4: 4;
+  --hli-z-index-level-5: 5;
+  --hli-z-index-level-6: 6;
+  --hli-z-index-level-7: 7;
+  --hli-z-index-modal: 1000;
+  --hli-z-index-spinner: 2000;
 }
 
+@font-face {
+  font-family: HanwhaGothic;
+  font-weight: 700;
+  src: local("HanwhaGothic"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicB/HanwhaGothicB.woff2") format("woff2"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicB/HanwhaGothicB.woff") format("woff"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicB/HanwhaGothicB.ttf") format("truetype");
+}
+@font-face {
+  font-family: HanwhaGothic;
+  font-weight: 400;
+  src: local("HanwhaGothic"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicR/HanwhaGothicR.woff2") format("woff2"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicR/HanwhaGothicR.woff") format("woff"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicR/HanwhaGothicR.ttf") format("truetype");
+}
+@font-face {
+  font-family: HanwhaGothic;
+  font-weight: 300;
+  src: local("HanwhaGothic"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicL/HanwhaGothicL.woff2") format("woff2"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicL/HanwhaGothicL.woff") format("woff"), url("https://static.hanwhalife.com/static/ds/font/Gothic/HanwhaGothicL/HanwhaGothicL.ttf") format("truetype");
+}
 *,
 *::before,
 *::after {
@@ -10,6 +92,231 @@
 
 body {
   margin: 0;
+  font-family: HanwhaGothic, -apple-system, system-ui, HelveticaNeue, AppleSDGothicNeo, sans-serif;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentcolor;
+  border: 0;
+  opacity: 0.25;
+}
+
+hr:not([size]) {
+  height: 1px;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+}
+
+abbr[title],
+abbr[data-bs-original-title] {
+  text-decoration: underline dotted;
+  cursor: help;
+  text-decoration-skip-ink: none;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+ol,
+ul,
+dl,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href], [class]),
+a:not([href], [class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+svg {
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+caption {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #6c757d;
+  text-align: left;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  border-radius: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  appearance: button;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+legend + * {
+  clear: left;
+}
+
+output {
+  display: inline-block;
+}
+
+iframe {
+  border: 0;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+strong {
+  font-weight: 700; /* 한화고딕 bold */
 }
 
 .btn {
