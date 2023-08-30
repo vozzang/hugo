@@ -1,11 +1,10 @@
 {
   "scripts": {
+    "start": "npm-run-all --parallel watch docs-serve",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
     "docs-serve": "hugo server --port 8001 --disableFastRender --printUnusedTemplates",
     "watch": "npm-run-all --parallel watch-*",
-    "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-compile\"",
-    "watch-css-dist": "nodemon --watch dist/css/ --ext css",
-    "watch-css-docs": "nodemon --watch site/assets/scss/ --ext scss"
+    "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-compile\""
   },
   "dependencies": {
     "hugo-bin": "^0.113.0",

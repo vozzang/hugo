@@ -1,10 +1,29 @@
+@use 'sass:map';
+
 $prefix: hli- !default;
 $palette: (
   'white': #fff,
   'black': #272b2f,
   'orange500': #fa6600,
-  'gray900': #485059
+  'gray900': #485059,
+  'gray800': #737c85,
+  'gray700': #8c959d,
+  'gray600': #a6abb1,
+  'gray500': #c1c7cf,
+  'gray400': #d3d8de,
+  'gray300': #e2e5ea,
+  'gray200': #f1f2f5,
+  'gray100': #f5f6f7,
+  'dimmed': rgb(0 0 0 / 50%),
+  'indigoBlue400': #7e8cec,
+  'deepBlue500': #4780f0,
+  'deepYellow300': #ffc960,
+  'deepYellow500': #f4a125,
+  'red500': #f53f3f
 ) !default;
 $theme-colors: (
-  'primary': map-get($palette, 'white')
+  'primary': map.get($palette, 'orange'),
+  'secondary': map.get($palette, 'gray900'),
+  'neutral1': map.get($palette, 'gray100'),
+  'neutral2': map.get($palette, 'gray200')
 ) !default;
