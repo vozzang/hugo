@@ -7,7 +7,7 @@
 
 .site-main {
   grid-area: main;
-  padding: 100px 80px 0;
+  padding: 100px 80px;
 }
 
 .site-main-container {
@@ -24,21 +24,66 @@
 
 .site-main-title {
   font-size: 3rem;
+  color: var(--hli-color-text-body);
 }
 
 .site-main-description {
-  margin-top: 24px;
-  color: #888;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--hli-color-text-body-3);
 }
 
 h2 {
+  margin-bottom: 0.5rem;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.5;
+  color: var(--hli-color-text-body-1);
+
+  .site-anchor-link {
+    padding: 0 0.175rem;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0;
+    transition:
+      color 0.15s ease-in-out,
+      opacity 0.15s ease-in-out;
+
+    &::after {
+      content: '#';
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    .site-anchor-link {
+      opacity: 1;
+    }
+  }
+}
+
+.site-example-snippet {
+  margin-bottom: 1rem;
+}
+
+.site-example {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--hli-color-border-1);
+  border-radius: 1rem;
+}
+
+.highlight-toolbar {
+  display: none;
 }
 
 .highlight {
   padding: 0.75rem 1.25rem;
+  background-color: var(--hli-color-background-1);
+  border-radius: 1rem;
 
   pre {
     padding: 0.25rem 0 0.875rem;
@@ -48,5 +93,10 @@ h2 {
     white-space: pre;
     background-color: transparent;
     border: 0;
+  }
+
+  pre code {
+    color: #000;
+    word-wrap: normal;
   }
 }

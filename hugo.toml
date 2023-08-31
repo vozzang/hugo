@@ -2,6 +2,10 @@ baseURL = 'https://vozzang.github.io/hugo/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+[markup]
+[markup.highlight]
+  noClasses = false
+
 [module]
 [[module.mounts]]
   source = 'dist'
@@ -21,3 +25,8 @@ title = 'My New Hugo Site'
 [[module.mounts]]
   source = 'site/static'
   target = 'static'
+
+[params]
+[params.anchors]
+  min = 2
+  max = 5

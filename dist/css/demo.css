@@ -330,24 +330,125 @@ strong {
   white-space: nowrap;
   border: 0;
   border-radius: var(--hli-border-radius-medium);
+  font-size: var(--hli-font-size-text-small);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-large);
+}
+.btn:hover {
+  box-shadow: inset 100rem 100rem rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  box-shadow: inset 100rem 100rem rgba(0, 0, 0, 0.16);
+}
+.btn:disabled {
+  box-shadow: inset 100rem 100rem rgba(255, 255, 255, 0.6);
+}
+
+.btn-primary {
+  color: var(--hli-color-text-body-0);
+  background-color: #fa6600;
+}
+
+.btn-secondary {
+  color: var(--hli-color-text-body-0);
+  background-color: #485059;
+}
+
+.btn-neutral1 {
+  color: var(--hli-color-text-body-1);
+  background-color: #f5f6f7;
+}
+
+.btn-neutral2 {
+  color: var(--hli-color-text-body-1);
+  background-color: #f1f2f5;
 }
 
 .btn-lg {
   height: 3.5rem;
   padding: 0 padding-x;
   border-radius: var(--hli-border-radius-medium);
+  font-size: var(--hli-font-size-title-xsmall);
+  font-weight: var(--hli-font-weight-regular);
+  line-height: var(--hli-font-line-height-large);
 }
 
 .btn-sm {
   height: 2.5rem;
   padding: 0 padding-x;
   border-radius: var(--hli-border-radius-medium);
+  font-size: var(--hli-font-size-text-small);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-large);
 }
 
 .btn-xs {
   height: 2rem;
   padding: 0 padding-x;
   border-radius: var(--hli-border-radius-small);
+  font-size: var(--hli-font-size-text-small);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-title1 {
+  font-size: var(--hli-font-size-title-xlarge);
+  font-weight: var(--hli-font-weight-bold);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-title2 {
+  font-size: var(--hli-font-size-title-large);
+  font-weight: var(--hli-font-weight-bold);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-title3 {
+  font-size: var(--hli-font-size-title-medium);
+  font-weight: var(--hli-font-weight-bold);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-title4 {
+  font-size: var(--hli-font-size-title-small);
+  font-weight: var(--hli-font-weight-bold);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-title5 {
+  font-size: var(--hli-font-size-title-xsmall);
+  font-weight: var(--hli-font-weight-bold);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-subtitle1 {
+  font-size: var(--hli-font-size-title-small);
+  font-weight: var(--hli-font-weight-regular);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-subtitle2 {
+  font-size: var(--hli-font-size-title-xsmall);
+  font-weight: var(--hli-font-weight-regular);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-body1 {
+  font-size: var(--hli-font-size-text-medium);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-body2 {
+  font-size: var(--hli-font-size-text-small);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-large);
+}
+
+.typography-caption {
+  font-size: var(--hli-font-size-text-xsmall);
+  font-weight: var(--hli-font-weight-light);
+  line-height: var(--hli-font-line-height-medium);
 }
 
 /*# sourceMappingURL=demo.css.map */

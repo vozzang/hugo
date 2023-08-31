@@ -1,0 +1,61 @@
+@mixin typography($type) {
+  @if $type == title1 {
+    font-size: var(--#{$prefix}font-size-title-xlarge);
+    font-weight: var(--#{$prefix}font-weight-bold);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == title2 {
+    font-size: var(--#{$prefix}font-size-title-large);
+    font-weight: var(--#{$prefix}font-weight-bold);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == title3 {
+    font-size: var(--#{$prefix}font-size-title-medium);
+    font-weight: var(--#{$prefix}font-weight-bold);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == title4 {
+    font-size: var(--#{$prefix}font-size-title-small);
+    font-weight: var(--#{$prefix}font-weight-bold);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == title5 {
+    font-size: var(--#{$prefix}font-size-title-xsmall);
+    font-weight: var(--#{$prefix}font-weight-bold);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == subtitle1 {
+    font-size: var(--#{$prefix}font-size-title-small);
+    font-weight: var(--#{$prefix}font-weight-regular);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == subtitle2 {
+    font-size: var(--#{$prefix}font-size-title-xsmall);
+    font-weight: var(--#{$prefix}font-weight-regular);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == body1 {
+    font-size: var(--#{$prefix}font-size-text-medium);
+    font-weight: var(--#{$prefix}font-weight-light);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == body2 {
+    font-size: var(--#{$prefix}font-size-text-small);
+    font-weight: var(--#{$prefix}font-weight-light);
+    line-height: var(--#{$prefix}font-line-height-large);
+  }
+
+  @if $type == caption {
+    font-size: var(--#{$prefix}font-size-text-xsmall);
+    font-weight: var(--#{$prefix}font-weight-light);
+    line-height: var(--#{$prefix}font-line-height-medium);
+  }
+}

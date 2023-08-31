@@ -22,7 +22,7 @@ $palette: (
   'red500': #f53f3f
 ) !default;
 $theme-colors: (
-  'primary': map.get($palette, 'orange'),
+  'primary': map.get($palette, 'orange500'),
   'secondary': map.get($palette, 'gray900'),
   'neutral1': map.get($palette, 'gray100'),
   'neutral2': map.get($palette, 'gray200')

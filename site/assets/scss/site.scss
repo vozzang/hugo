@@ -1,4 +1,10 @@
+@import 'root';
 @import 'header';
 @import 'footer';
 @import 'main';
 @import 'sidebar';
+@import 'syntax';
+
+body {
+  background-color: var(--hli-color-background-0);
+}

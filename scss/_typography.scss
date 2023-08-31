@@ -1,0 +1,21 @@
+@for $i from 1 through 5 {
+  .typography-title#{$i} {
+    @include typography(title#{$i});
+  }
+}
+
+@for $i from 1 through 2 {
+  .typography-subtitle#{$i} {
+    @include typography(subtitle#{$i});
+  }
+}
+
+@for $i from 1 through 2 {
+  .typography-body#{$i} {
+    @include typography(body#{$i});
+  }
+}
+
+.typography-caption {
+  @include typography(caption);
+}

@@ -2,11 +2,10 @@
   position: sticky;
   top: 88px;
   grid-area: sidebar;
-  height: calc(100vh - 13rem);
+  height: calc(100vh - 5.5rem);
   padding: 20px 0;
   overflow-y: auto;
-  background-color: #fff;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid var(--hli-color-border-1);
 
   button,
   a {
@@ -16,7 +15,7 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 23px;
-    color: #888;
+    color: var(--hli-color-text-body-3);
     text-align: left;
     text-decoration: none;
     background: transparent;
@@ -24,12 +23,12 @@
     opacity: 0.8;
 
     &:hover {
-      color: #f90;
+      color: var(--hli-color-text-body);
     }
 
     &.active {
-      color: #087;
-      background-color: #eee;
+      color: var(--hli-color-text-body);
+      background-color: var(--hli-color-surface-neutral-1);
       opacity: 1;
     }
   }
@@ -40,5 +39,5 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  color: #888;
+  color: var(--hli-color-text-neutral-1);
 }
